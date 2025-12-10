@@ -1,10 +1,7 @@
 import { GoogleGenAI, Modality } from "@google/genai";
 import { TargetLanguage, VoiceName, VoiceTone } from "../types";
 
-// Ensure API key is present
-const API_KEY = process.env.API_KEY || '';
-
-const ai = new GoogleGenAI({ apiKey: API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 /**
  * Improves or translates text using Gemini Flash, applying a specific tone/mood.
@@ -14,8 +11,6 @@ export async function improveText(
   targetLanguage: TargetLanguage,
   tone: VoiceTone
 ): Promise<string> {
-  if (!API_KEY) throw new Error("API Key is missing.");
-
   // Map tones to specific instruction styles for the LLM
   const toneInstructions: Record<VoiceTone, string> = {
     [VoiceTone.Standard]: "Clear, professional, and well-structured.",
@@ -62,8 +57,6 @@ export async function generateSpeech(
   text: string,
   voice: VoiceName
 ): Promise<string> {
-  if (!API_KEY) throw new Error("API Key is missing.");
-
   const response = await ai.models.generateContent({
     model: 'gemini-2.5-flash-preview-tts',
     contents: [{ parts: [{ text }] }],
