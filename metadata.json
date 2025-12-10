@@ -1,0 +1,5 @@
+{
+  "name": "CapyVox Studio",
+  "description": "An epic text-to-speech studio powered by Gemini. Improve your text, translate it, and generate high-quality downloadable audio in seconds.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,68 @@
+import { AppLanguage } from '../types';
+
+export const translations = {
+  [AppLanguage.EN]: {
+    title_suffix: "Studio",
+    subtitle: "Transform your words into epic audio. Improve, translate, and narrate with AI intelligence.",
+    label_script: "Script Input",
+    placeholder_script: "Type something epic here...",
+    label_target_lang: "Target Language",
+    label_voice_model: "Voice Model",
+    label_voice_tone: "Voice Tone / Mood",
+    btn_improve: "Enhance & Translate",
+    btn_generate: "Generate Audio",
+    status_ready: "Ready to Broadcast",
+    download_wav: "Download .WAV",
+    error_improve: "Failed to improve text. Please try again.",
+    error_generate: "Failed to generate audio. Check API Key or quota.",
+    tone_desc: "Adjusts the writing style to guide the voice emotion.",
+    stat_chars: "Characters",
+    stat_est_time: "Est. Duration",
+    stat_limit_text: "Limit: ~10k chars recommended",
+    stat_limit_audio: "Max output: ~50MB per file",
+  },
+  [AppLanguage.PT]: {
+    title_suffix: "Studio",
+    subtitle: "Transforme suas palavras em áudio épico. Melhore, traduza e narre com inteligência artificial.",
+    label_script: "Entrada de Texto",
+    placeholder_script: "Digite algo épico aqui...",
+    label_target_lang: "Idioma de Destino",
+    label_voice_model: "Modelo de Voz",
+    label_voice_tone: "Tom de Voz / Humor",
+    btn_improve: "Melhorar e Traduzir",
+    btn_generate: "Gerar Áudio",
+    status_ready: "Pronto para Transmitir",
+    download_wav: "Baixar .WAV",
+    error_improve: "Falha ao melhorar o texto. Tente novamente.",
+    error_generate: "Falha ao gerar áudio. Verifique a chave da API.",
+    tone_desc: "Ajusta o estilo da escrita para guiar a emoção da voz.",
+    stat_chars: "Caracteres",
+    stat_est_time: "Duração Est.",
+    stat_limit_text: "Limite: ~10k caracteres recomendado",
+    stat_limit_audio: "Saída máx: ~50MB por arquivo",
+  },
+  [AppLanguage.ES]: {
+    title_suffix: "Studio",
+    subtitle: "Transforma tus palabras en audio épico. Mejora, traduce y narra con inteligencia artificial.",
+    label_script: "Entrada de Guión",
+    placeholder_script: "Escribe algo épico aquí...",
+    label_target_lang: "Idioma de Destino",
+    label_voice_model: "Modelo de Voz",
+    label_voice_tone: "Tono de Voz / Estado de Ánimo",
+    btn_improve: "Mejorar y Traducir",
+    btn_generate: "Generar Audio",
+    status_ready: "Listo para Transmitir",
+    download_wav: "Descargar .WAV",
+    error_improve: "Error al mejorar el texto. Inténtalo de nuevo.",
+    error_generate: "Error al generar audio. Verifica la clave API.",
+    tone_desc: "Ajusta el estilo de escritura para guiar la emoción de la voz.",
+    stat_chars: "Caracteres",
+    stat_est_time: "Duración Est.",
+    stat_limit_text: "Límite: ~10k caracteres recomendado",
+    stat_limit_audio: "Salida máx: ~50MB por archivo",
+  }
+};
+
+export const getTranslation = (lang: AppLanguage, key: keyof typeof translations['en']) => {
+  return translations[lang][key];
+};
