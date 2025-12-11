@@ -18,8 +18,8 @@ export const translations = {
     tone_desc: "Adjusts the writing style to guide the voice emotion.",
     stat_chars: "Characters",
     stat_est_time: "Est. Duration",
-    stat_limit_text: "Limit: ~10k chars recommended",
-    stat_limit_audio: "Max output: ~50MB per file",
+    stat_limit_text: "Capacity: Ultra-High (Gemini 1M+)",
+    stat_limit_audio: "Max Duration: ~15 mins per file",
   },
   [AppLanguage.PT]: {
     title_suffix: "Studio",
@@ -38,8 +38,8 @@ export const translations = {
     tone_desc: "Ajusta o estilo da escrita para guiar a emoção da voz.",
     stat_chars: "Caracteres",
     stat_est_time: "Duração Est.",
-    stat_limit_text: "Limite: ~10k caracteres recomendado",
-    stat_limit_audio: "Saída máx: ~50MB por arquivo",
+    stat_limit_text: "Capacidade: Ultra-Alta (Gemini 1M+)",
+    stat_limit_audio: "Duração máx: ~15 mins por arquivo",
   },
   [AppLanguage.ES]: {
     title_suffix: "Studio",
@@ -58,8 +58,8 @@ export const translations = {
     tone_desc: "Ajusta el estilo de escritura para guiar la emoción de la voz.",
     stat_chars: "Caracteres",
     stat_est_time: "Duración Est.",
-    stat_limit_text: "Límite: ~10k caracteres recomendado",
-    stat_limit_audio: "Salida máx: ~50MB por archivo",
+    stat_limit_text: "Capacidad: Ultra-Alta (Gemini 1M+)",
+    stat_limit_audio: "Duración máx: ~15 mins por archivo",
   }
 };
 
